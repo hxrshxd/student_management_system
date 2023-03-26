@@ -3,12 +3,14 @@ package com.example.student_management_system;
 public class Student {
     private String name;
     private int rollNo;
-    private int contact;
+    private String mobileNo;
+    private int age;
 
-    public Student(String name, int rollNo, int contact) {
+    public Student(String name, int rollNo, String mobileNo, int age) {
         this.name = name;
         this.rollNo = rollNo;
-        this.contact = contact;
+        this.mobileNo = mobileNo;
+        this.age = age;
     }
 
     public String getName() {
@@ -27,11 +29,19 @@ public class Student {
         this.rollNo = rollNo;
     }
 
-    public int getContact() {
-        return contact;
+    public String getMobileNo() {
+        return mobileNo;
     }
 
-    public void setContact(int contact) {
-        this.contact = contact;
+    public void setMobileNo(String mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
